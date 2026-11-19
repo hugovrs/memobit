@@ -18,7 +18,7 @@ O jogador deve observar a sequência apresentada pelo display e reproduzi-la uti
 
 A cada fase, a sequência se torna maior, aumentando gradualmente o nível de dificuldade.
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 - [x] Exibição de símbolos em display LED MAX7219.
 - [x] Três botões independentes para interação.
@@ -32,7 +32,7 @@ A cada fase, a sequência se torna maior, aumentando gradualmente o nível de di
 - [x] Ranking de pontuações com pódio.
 - [x] Organização de jogadores empatados por ordem de cadastro.
 
-🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
 Hardware
 
@@ -49,7 +49,7 @@ Software
 - CSS
 - Comunicação serial entre Arduino e computador
 
-🔌 Funcionamento
+## 🔌 Funcionamento
 
 O funcionamento do MemoBit é dividido em três etapas principais:
 
@@ -65,13 +65,13 @@ O jogador utiliza os três botões físicos para reproduzir a sequência apresen
 
 O sistema registra o desempenho do jogador e atualiza o ranking, permitindo acompanhar os melhores resultados no Hall da Fama.
 
-🏆 Hall da Fama
+## 🏆 Hall da Fama
 
 O MemoBit possui um sistema de classificação que organiza os jogadores de acordo com suas pontuações.
 
 O sistema também apresenta um pódio com as três primeiras posições, permitindo até três jogadores por posição em caso de empate, respeitando a ordem de cadastro.
 
-📁 Estrutura do projeto
+## 📁 Estrutura do projeto
 
 <pre>
 MemoBit/
@@ -84,13 +84,13 @@ MemoBit/
 └── README.md
 </pre>
 
-🚀 Objetivo do projeto
+## 🚀 Objetivo do projeto
 
 O MemoBit foi desenvolvido com o propósito de explorar conceitos de programação, eletrônica, lógica computacional e integração entre hardware e software.
 
 Além de proporcionar entretenimento, o projeto representa uma oportunidade de aplicar conhecimentos de desenvolvimento de sistemas em uma aplicação prática.
 
-👨‍💻 Desenvolvimento
+## 👨‍💻 Desenvolvimento
 
 Projeto: MemoBit
 <br>
