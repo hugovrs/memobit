@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MemoBit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>MEMOBIT</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- CONEXÃO COM ARDUINO -->
+        <section class="connection">
+
+            <h2>Conexão Arduino</h2>
+
+            <div class="connection-status">
+                <span id="statusIndicator"></span>
+                <p id="status">Desconectado</p>
+            </div>
+
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Nome do jogador"
+                maxlength="25"
+                autocomplete="off"
+            >
+
+            <button id="connectBtn">
+                Conectar Arduino USB
+            </button>
+
+        </section>
+
+
+        <!-- HALL DA FAMA -->
+        <section class="ranking">
+
+            <h2>🏆 HALL DA FAMA</h2>
+
+            <p class="subtitle">
+                OS MELHORES JOGADORES
+            </p>
+
+
+            <!-- PÓDIO -->
+            <div class="podium" id="podium">
+
+                <!-- SEGUNDO LUGAR -->
+                <div class="podium-place second">
+
+                    <span class="medal">🥈</span>
+
+                    <h3>2º LUGAR</h3>
+
+                    <div
+                        class="podium-players"
+                        id="secondPlayers">
+                    </div>
+
+                    <p
+                        class="podium-points"
+                        id="secondPoints">
+                        0 pts
+                    </p>
+
+                    <div class="podium-block">
+                        2º
+                    </div>
+
+                </div>
+
+
+                <!-- PRIMEIRO LUGAR -->
+                <div class="podium-place first">
+
+                    <span class="medal">🥇</span>
+
+                    <h3>1º LUGAR</h3>
+
+                    <div
+                        class="podium-players"
+                        id="firstPlayers">
+                    </div>
+
+                    <p
+                        class="podium-points"
+                        id="firstPoints">
+                        0 pts
+                    </p>
+
+                    <div class="podium-block">
+                        1º
+                    </div>
+
+                </div>
+
+
+                <!-- TERCEIRO LUGAR -->
+                <div class="podium-place third">
+
+                    <span class="medal">🥉</span>
+
+                    <h3>3º LUGAR</h3>
+
+                    <div
+                        class="podium-players"
+                        id="thirdPlayers">
+                    </div>
+
+                    <p
+                        class="podium-points"
+                        id="thirdPoints">
+                        0 pts
+                    </p>
+
+                    <div class="podium-block">
+                        3º
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RANKING GERAL -->
+            <div class="general-ranking">
+
+                <h2>CLASSIFICAÇÃO GERAL</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Jogador</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="rankingList">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="storage-info">
+                💾 Resultados salvos neste navegador
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>MEMOBIT | ARDUINO + WEB</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
