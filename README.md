@@ -6,7 +6,7 @@ O MemoBit é um projeto de jogo eletrônico de memória inspirado no clássico G
 
 O projeto combina programação, eletrônica e desenvolvimento web, integrando um Arduino a uma interface digital para proporcionar uma experiência interativa.
 
-🎮 Sobre o jogo
+## 🎮 Sobre o jogo
 
 O MemoBit apresenta sequências de três símbolos:
 
