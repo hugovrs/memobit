@@ -75,9 +75,12 @@ O sistema também apresenta um pódio com as três primeiras posições, permiti
 
 <pre>
 MemoBit/
-├── Arduino/
+├── arduino/
 │   └── memobit.ino
-├── Web/
+├── assets/
+│   └── img/
+│       └── logo.png
+├── web/
 │   ├── index.html
 │   ├── main.js
 │   └── style.css
