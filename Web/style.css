@@ -27,10 +27,8 @@ header h1 {
     letter-spacing: 3px;
 }
 
-header p {
-    color: #9ca3af;
-    margin-top: 8px;
-    letter-spacing: 3px;
+#logo {
+    width: 55%;
 }
 
 
