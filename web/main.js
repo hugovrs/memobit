@@ -192,6 +192,8 @@ async function receberDados() {
 
 /* ===== PROCESSAR RESULTADOS ===== */
 
+/* ===== PROCESSAR RESULTADOS ===== */
+
 function processarResultado(mensagem) {
 
     console.log("Arduino:", mensagem);
@@ -214,16 +216,30 @@ function processarResultado(mensagem) {
         return;
     }
 
-    // Adiciona jogador ao ranking
-    jogadores.push({
+    // Procura um jogador já cadastrado
+    const jogadorExistente = jogadores.find(
+        jogador => jogador.nome.toLowerCase() === nome.toLowerCase()
+    );
 
-        nome: nome,
+    if (jogadorExistente) {
 
-        pontos: pontos,
+        // Atualiza a pontuação do jogador existente
+        jogadorExistente.pontos = pontos;
 
-        cadastro: proximoCadastro++
+    } else {
 
-    });
+        // Cadastra um novo jogador
+        jogadores.push({
+
+            nome: nome,
+
+            pontos: pontos,
+
+            cadastro: proximoCadastro++
+
+        });
+
+    }
 
     salvarRanking();
 
