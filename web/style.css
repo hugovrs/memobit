@@ -22,13 +22,12 @@ header {
     border-bottom: 2px solid #2563eb;
 }
 
-header h1 {
-    font-size: 32px;
-    letter-spacing: 3px;
+#header-content {
+    padding: 0%;
 }
 
 #logo {
-    width: 55%;
+    width: 250px;
 }
 
 
