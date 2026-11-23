@@ -6,7 +6,7 @@ LedControl lc = LedControl(11, 13, 10, 1);
 
 // ===== CONFIGURAÇÕES DO JOGO =====
 
-const int TOTAL_FASES = 10;
+const int TOTAL_FASES = 9;
 
 const int SEQUENCIA_INICIAL = 1;
 
